@@ -1,8 +1,10 @@
 .content h1{
+    font-size: 14px;
     color: #73F0F9;
 }
 .content h4, strong, span{
     color: #01013F;
+    width: 100%;
 }
 .main{
     position: relative;
@@ -12,26 +14,28 @@
 .main img{
     width: 100%;
     height: 100%;
-    position: absolute;
 }
 .main-btn{
     position: absolute;
     border: lightblue 4px solid;
     top:28vw;
-    left: 48%;
     width: 200px;
     display: none;
 }
 
 .content-info{
-    padding: 100px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
     margin-top: 100px;
     display: grid;
-    grid-gap: 100px;
+    grid-gap: 200px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 800px);
+    grid-template-rows: repeat(7, auto);
 }
 .content-info-block{
+    width: 100%;
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -39,45 +43,134 @@
 }
 
 .content-info-img{
-    width: 400px;
-    height: 400px;
+    display: flex;
+    width: 100%;
+    height: 100%;
     align-self: flex-end;
 }
 .content-info-imgIz{
-    width: 400px;
-    height: 400px;
+    display: flex;
+    width: 100%;
+    height: 100%;
     align-self: flex-start;    
 }
 .content-info-img img, .content-info-imgIz img{
-    width: 40%;
-    height: 68%;
-    position: absolute;
-    border-radius: 20px;
-    top: 10px;
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    border-radius: 10px;
     transition: 0.5s;
-}
-.content-info-img img:hover, .content-info-imgIz img:hover{
     z-index: 2;
-    width: 42%;
-    height: 70%;
+    width: 80%;
+    height: 60%;
+    justify-self: center ;
 }
 
 .content-info-text{
-    position: absolute;
+    width: 100%;
+    height: auto;
+    /* position: absolute; */
     background-color: white;
-    border-radius: 20px;
-    top: 50px;
-    padding: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
     box-shadow: 10px 15px 26px -19px rgba(0,0,0,0.75);
 }
 
 .content-info-textDe{
-    position: absolute;
+    width: 100%;
+    height: auto;
+    /* position: absolute; */
     background-color: white;
-    border-radius: 20px;
-    top: 50px;
-    left: 100px;
-    padding: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
     box-shadow: 10px 15px 26px -19px rgba(0,0,0,0.75);
 }
 
+@media(min-width:1024px){
+    .content h1{
+            color: #73F0F9;
+        }
+        .content h4, strong, span{
+            color: #01013F;
+        }
+        .main{
+            position: relative;
+            width: 100%;
+            height: 50vw;
+        }
+        .main img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .main-btn{
+            position: absolute;
+            border: lightblue 4px solid;
+            top:28vw;
+            left: 48%;
+            width: 200px;
+            display: none;
+        }
+
+        .content-info{
+            padding: 100px;
+            margin-top: 100px;
+            display: grid;
+            grid-gap: 100px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 800px);
+        }
+        .content-info-block{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+
+        .content-info-img{
+            width: 400px;
+            height: 400px;
+            align-self: flex-end;
+        }
+        .content-info-imgIz{
+            width: 400px;
+            height: 400px;
+            align-self: flex-start;    
+        }
+        .content-info-img img, .content-info-imgIz img{
+            width: 40%;
+            height: 68%;
+            position: absolute;
+            border-radius: 20px;
+            top: 10px;
+            transition: 0.5s;
+        }
+        .content-info-img img:hover, .content-info-imgIz img:hover{
+            z-index: 2;
+            width: 42%;
+            height: 70%;
+        }
+
+        .content-info-text{
+            position: absolute;
+            background-color: white;
+            border-radius: 20px;
+            top: 50px;
+            padding: 100px;
+            box-shadow: 10px 15px 26px -19px rgba(0,0,0,0.75);
+        }
+
+        .content-info-textDe{
+            position: absolute;
+            background-color: white;
+            border-radius: 20px;
+            top: 50px;
+            left: 100px;
+            padding: 100px;
+            box-shadow: 10px 15px 26px -19px rgba(0,0,0,0.75);
+        }
+       
+
+}

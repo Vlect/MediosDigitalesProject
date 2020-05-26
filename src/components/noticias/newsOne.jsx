@@ -18,7 +18,7 @@ class NewsOne extends React.Component {
 
   render(){
     return (
-      <div className="News" autoCapitalize> 
+      <div className="News"> 
         <NavBar />
         <div></div>
         <main className="imagen-news">

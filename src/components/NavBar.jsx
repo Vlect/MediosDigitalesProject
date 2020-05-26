@@ -17,8 +17,8 @@ export default class NavBar extends React.Component {
     render(){ 
         return(
             <div className="nav-bar">
-                <h1>AI</h1>
                 <ul>
+                    <li><h1>AI</h1></li>
                     <li
                         onClick={() => this.navigate(1)} 
                     >
