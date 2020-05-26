@@ -60,7 +60,7 @@
     /* position: absolute; */
     border-radius: 10px;
     transition: 0.5s;
-    z-index: 2;
+    /* z-index: 2; */
     width: 80%;
     height: 60%;
     justify-self: center ;
@@ -88,7 +88,7 @@
     box-shadow: 10px 15px 26px -19px rgba(0,0,0,0.75);
 }
 
-@media(min-width: 1024px) and (orientation: landscape){
+@media(min-width: 768px) and (orientation: landscape){
     .content h1{
             color: #73F0F9;
         }
