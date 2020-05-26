@@ -187,7 +187,7 @@ export default class Ai extends React.Component{
                                     <strong>estadística</strong>, resolución de ecuaciones de más de una variable, matemáticas <br/>
                                     discretas, integración, derivación y manejo de matrices será indispensable para <br/>
                                     encontrar relaciones matemáticas en problemas cotidianos que puedan ser <br/>
-                                    interpretados por una computadora.
+                                    interpretados por una .
                                 </p>
                             </div>
                         </div>
