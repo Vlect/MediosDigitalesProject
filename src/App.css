@@ -170,14 +170,14 @@ main h1{
     margin-left: 100px;
   }
   .nav-bar ul{
-    display: flex;
     margin-right: 100px;
     font-size: 14px;
     list-style: none;
     font-weight: bold;
   }
-  .nav-bar ul li{
+  .nav-bar ul li:nth-child(3){
     margin-right: 50px;
+    justify-self: flex-end;
   }
   .caracteristics-ai{
     justify-content: center;

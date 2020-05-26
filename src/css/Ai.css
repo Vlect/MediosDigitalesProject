@@ -88,7 +88,7 @@
     box-shadow: 10px 15px 26px -19px rgba(0,0,0,0.75);
 }
 
-@media(min-width:1024px){
+@media(min-width: 1024px) and (orientation: landscape){
     .content h1{
             color: #73F0F9;
         }
